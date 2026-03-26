@@ -332,6 +332,8 @@ def init_character(ctx, engine, count):
 
     click.echo(f"Generating {count} reference images with {engine}...\n")
 
+    import time
+
     for i, prompt in enumerate(prompts[:count]):
         click.echo(f"  [{i+1}/{count}] Generating...")
         out_path = ref_dir / f"gemma_ref_{i+1:03d}.png"
@@ -340,6 +342,10 @@ def init_character(ctx, engine, count):
             click.echo(f"    ✅ Saved: {result}")
         except Exception as e:
             click.echo(f"    ❌ Error: {e}")
+        # Wait between requests to avoid rate limiting
+        if i < count - 1:
+            click.echo("    ⏳ Waiting 25s for rate limit...")
+            time.sleep(25)
 
     click.echo(f"\n✅ Reference images saved to {ref_dir}/")
     click.echo("Review them and pick the best 2-3 for consistent character generation.")
