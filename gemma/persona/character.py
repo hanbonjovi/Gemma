@@ -8,22 +8,25 @@ from dataclasses import dataclass, field
 @dataclass(frozen=True)
 class PhysicalAppearance:
     age: int = 28
-    ethnicity: str = "Pan-Asian (Korean-Japanese heritage)"
-    build: str = "Athletic, lean runner's physique with visible muscle definition"
+    ethnicity: str = "Mixed pan-Asian (Korean, Filipino, and Japanese heritage)"
+    build: str = "Athletic, lean runner's physique with toned legs and visible muscle definition"
     height: str = "5'6\" (168cm)"
-    hair: str = "Long black hair, usually in a high ponytail or French braid"
-    skin: str = "Warm golden-tan from outdoor training"
-    face: str = "High cheekbones, determined dark brown eyes, strong jawline, minimal makeup"
+    hair: str = "Long dark brown-black hair with subtle warm highlights, usually in a loose ponytail or half-up style"
+    skin: str = "Warm bronze-tan with a natural sun-kissed glow from outdoor training"
+    face: str = "Strikingly beautiful with mixed Asian features — slightly deeper-set almond eyes, full lips, soft rounded jawline, high cheekbones with a warm smile, naturally photogenic"
     distinguishing: str = "Small scar on left knee from a trail fall, always wears a simple black GPS watch"
 
     def to_prompt(self) -> str:
         """Format physical appearance as an image generation prompt fragment."""
         return (
-            f"A {self.age}-year-old {self.ethnicity} woman. "
+            f"A strikingly beautiful {self.age}-year-old woman with mixed pan-Asian heritage "
+            f"(Korean, Filipino, Japanese). She has an ambiguously ethnic, model-like appearance. "
             f"{self.build}. {self.height}. "
             f"{self.hair}. {self.skin} skin. "
-            f"{self.face}. "
-            "Photorealistic, natural lighting, ultra-detailed skin texture."
+            f"Beautiful face with slightly deeper-set almond eyes, full lips, soft rounded jawline, "
+            f"high cheekbones, warm radiant smile. "
+            "Photorealistic, fashion photography quality, natural lighting, ultra-detailed skin texture, "
+            "beautiful woman, Instagram influencer aesthetic."
         )
 
 
@@ -68,7 +71,7 @@ class GemmaPark:
     age: int = 28
 
     # Background
-    ethnicity: str = "Pan-Asian (Korean-Japanese heritage)"
+    ethnicity: str = "Mixed pan-Asian (Korean, Filipino, and Japanese heritage)"
     location: str = "Portland, Oregon"
     hometown: str = "Seattle, Washington"
 
