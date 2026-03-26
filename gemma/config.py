@@ -62,7 +62,7 @@ class Config:
                 default_engine=os.getenv("DEFAULT_IMAGE_ENGINE", "flux_kontext"),
                 replicate_api_token=replicate_token,
                 fal_key=os.getenv("FAL_KEY", ""),
-                google_api_key=os.getenv("GOOGLE_API_KEY", ""),
+                google_api_key=os.getenv("GOOGLE_API_KEY", "") or os.getenv("GEMINI_API_KEY", ""),
                 lora_model_path=os.getenv("LORA_MODEL_PATH", ""),
                 lora_weight=float(os.getenv("LORA_WEIGHT", "0.55")),
             ),

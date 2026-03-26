@@ -74,7 +74,7 @@ class NanoBananaGenerator(ImageGenerator):
             contents.append(prompt)
 
         response = client.models.generate_content(
-            model="gemini-2.0-flash-preview-image-generation",
+            model="gemini-3.1-flash-image-preview",
             contents=contents,
             config=types.GenerateContentConfig(
                 response_modalities=["TEXT", "IMAGE"],
