@@ -1,0 +1,168 @@
+scenes:
+  # === TRAIL RUNNING ===
+  - name: trail_sunrise
+    prompt: >
+      Running on a narrow forest trail at sunrise, golden light filtering through
+      tall Pacific Northwest evergreen trees. Morning mist rising from the ground.
+      Dynamic mid-stride pose, powerful running form. Mud splashing from trail shoes.
+    lighting: golden hour sunrise
+    outfit_type: trail_running
+    aspect_ratio: "4:5"
+
+  - name: trail_rain
+    prompt: >
+      Running through heavy rain on a muddy trail in the Pacific Northwest.
+      Wet hair, rain droplets visible, determined expression. Dense forest
+      canopy, ferns lining the trail. Dark moody atmosphere.
+    lighting: overcast rainy
+    outfit_type: trail_running
+    aspect_ratio: "4:5"
+
+  - name: trail_creek_crossing
+    prompt: >
+      Leaping across a rocky creek crossing on a forest trail. Water splashing,
+      athletic form mid-jump. Moss-covered rocks, clear mountain stream.
+      Columbia River Gorge setting.
+    lighting: dappled forest light
+    outfit_type: trail_running
+    aspect_ratio: "4:5"
+
+  - name: trail_switchback
+    prompt: >
+      Climbing steep switchbacks on a mountain trail, head down, grinding uphill.
+      Elevation visible behind with valley below. Wildflowers on the trail edges.
+      Mt. Hood visible in the distance.
+    lighting: bright midday
+    outfit_type: trail_running
+    aspect_ratio: "4:5"
+
+  - name: trail_descent
+    prompt: >
+      Flying downhill on a technical rocky trail, arms out for balance, intense focus.
+      Dust kicking up from trail shoes. Steep terrain with exposed roots and rocks.
+    lighting: afternoon side light
+    outfit_type: trail_running
+    aspect_ratio: "4:5"
+
+  # === SUMMIT / EPIC VISTAS ===
+  - name: summit_victory
+    prompt: >
+      Standing at a mountain summit, hands on hips, overlooking a vast valley
+      below. Epic panoramic view. Wind in hair. Triumphant but calm expression.
+      Snow-capped peaks in background. Pacific Northwest Cascades range.
+    lighting: golden hour
+    outfit_type: trail_running
+    aspect_ratio: "4:5"
+
+  - name: summit_contemplation
+    prompt: >
+      Sitting on a rock at the edge of a mountain cliff, looking out at the
+      horizon. Reflective, peaceful moment after a long climb. Dramatic clouds.
+      Alpine meadow with wildflowers.
+    lighting: soft overcast
+    outfit_type: trail_running
+    aspect_ratio: "1:1"
+
+  # === ROAD RUNNING ===
+  - name: road_tempo
+    prompt: >
+      Running on a quiet road at dawn, perfect running form, focused expression.
+      Urban Portland setting with trees lining the street. Steam rising from breath
+      in cool morning air.
+    lighting: early morning blue hour
+    outfit_type: road_running
+    aspect_ratio: "4:5"
+
+  - name: road_bridge
+    prompt: >
+      Running across Portland's St. Johns Bridge at sunrise. Epic bridge
+      architecture framing the shot. Cathedral Park visible below.
+      Dramatic composition.
+    lighting: golden hour sunrise
+    outfit_type: road_running
+    aspect_ratio: "4:5"
+
+  # === POST-RUN / RECOVERY ===
+  - name: postrun_grit
+    prompt: >
+      Immediately after finishing a trail run. Covered in mud, sweat, and grit.
+      Hands on knees, catching breath. Raw, authentic moment. Trail visible behind.
+      Exhausted but satisfied expression.
+    lighting: natural outdoor
+    outfit_type: trail_running
+    aspect_ratio: "1:1"
+
+  - name: recovery_stretch
+    prompt: >
+      Stretching on a yoga mat in a bright, airy living room. Foam roller nearby.
+      Casual athleisure wear. Morning coffee on a side table. Relaxed but focused.
+      Natural window light.
+    lighting: soft window light
+    outfit_type: casual
+    aspect_ratio: "1:1"
+
+  # === RACE DAY ===
+  - name: race_start
+    prompt: >
+      Standing at an ultramarathon start line, race bib pinned to singlet,
+      headlamp on, pre-dawn darkness. Other runners around. Nervous but ready
+      expression. Race banner visible.
+    lighting: pre-dawn artificial + headlamp
+    outfit_type: race_day
+    aspect_ratio: "4:5"
+
+  - name: race_finish
+    prompt: >
+      Crossing an ultramarathon finish line, arms raised overhead in triumph.
+      Emotional expression — tears and smile. Race clock visible. Crowd cheering.
+      Muddy, sweaty, battered but victorious.
+    lighting: daytime natural
+    outfit_type: race_day
+    aspect_ratio: "4:5"
+
+  - name: race_aid_station
+    prompt: >
+      At an ultramarathon aid station, filling water bottles, eating snacks.
+      Other runners and volunteers around. Trail dust on clothes and face.
+      Deep into the race. Focused, determined.
+    lighting: natural outdoor
+    outfit_type: race_day
+    aspect_ratio: "1:1"
+
+  # === GEAR / FLAT LAY ===
+  - name: gear_flatlay
+    prompt: >
+      Overhead flat-lay of trail running gear on a wooden surface. Running shoes
+      (Salomon), hydration vest, energy gels, GPS watch, headlamp, trekking poles.
+      Organized and aesthetic arrangement. Clean product photography.
+    lighting: soft studio lighting
+    outfit_type: trail_running
+    aspect_ratio: "1:1"
+
+  - name: gear_shoes_trail
+    prompt: >
+      Close-up of muddy trail running shoes on a rocky trail. Aggressive tread
+      pattern visible. Beautiful trail background. Detail shot showing wear and
+      real use. Salomon Speedcross or Hoka Speedgoat style.
+    lighting: natural outdoor
+    outfit_type: trail_running
+    aspect_ratio: "1:1"
+
+  # === MOTIVATIONAL ===
+  - name: motivation_sunrise
+    prompt: >
+      Silhouette running toward a dramatic sunrise on a ridgeline trail.
+      Epic sky colors — orange, pink, purple. Mountain range in background.
+      Inspirational, powerful composition. Single runner against vast landscape.
+    lighting: sunrise backlit silhouette
+    outfit_type: trail_running
+    aspect_ratio: "4:5"
+
+  - name: motivation_storm
+    prompt: >
+      Running through a dramatic mountain storm. Dark clouds, rain, wind.
+      Determined expression, leaning into the wind. Dramatic moody atmosphere.
+      Lightning in the distance. Raw power.
+    lighting: dramatic storm lighting
+    outfit_type: trail_running
+    aspect_ratio: "4:5"

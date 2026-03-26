@@ -1,0 +1,63 @@
+# Video hook templates organized by content type and audience awareness level
+# These are starting points — the LLM will generate fresh variations
+
+formats:
+  bold_claim:
+    description: "Start with a surprising or contrarian statement"
+    examples:
+      - "Running more miles is actually making you slower."
+      - "The best ultra runners don't do speed work."
+      - "I trained for a 100-miler by running less than 80 miles a week."
+
+  personal_confession:
+    description: "Open with a vulnerable personal admission"
+    examples:
+      - "I cried at mile 67 and it was the best thing that ever happened to me."
+      - "I haven't told anyone this, but I almost quit ultra running last year."
+      - "My worst race taught me more than my best one ever could."
+
+  contrarian_take:
+    description: "Challenge conventional running wisdom"
+    examples:
+      - "Your running coach is wrong about easy days."
+      - "Stop carb-loading before races. Here's what to do instead."
+      - "The running shoe you love is actually hurting your form."
+
+  specific_result:
+    description: "Lead with a specific, impressive result"
+    examples:
+      - "I dropped 18 minutes off my 50K time with one change."
+      - "22 hours 15 minutes. 100 miles. Here's every mile."
+      - "3 months ago I couldn't run 10 miles. Yesterday I finished my first ultra."
+
+  question_hook:
+    description: "Start with a provocative question"
+    examples:
+      - "What's harder than running 100 miles? Stopping at mile 60."
+      - "Have you ever run so far your brain stops lying to you?"
+      - "Why do 67% of ultra runners never finish their second 100-miler?"
+
+script_structure:
+  hook_section:
+    duration_seconds: 3
+    goal: "Stop the scroll. Make them stay."
+    tips:
+      - "Show the most dramatic or unexpected moment first"
+      - "Text on screen should be bold, large, and readable"
+      - "Movement in the first frame — never start static"
+
+  story_section:
+    duration_seconds: 20
+    goal: "Deliver the value. Keep them watching."
+    tips:
+      - "Cut every 2-3 seconds to maintain pace"
+      - "Alternate between talking head and b-roll"
+      - "Use specific numbers and details, not vague claims"
+
+  cta_section:
+    duration_seconds: 7
+    goal: "Get the follow, save, or comment."
+    tips:
+      - "Ask a specific question, not 'follow for more'"
+      - "'Save this for your next race' works better than 'like and share'"
+      - "End on a strong visual — summit, finish line, dramatic moment"
