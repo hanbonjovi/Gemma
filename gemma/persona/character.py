@@ -7,26 +7,25 @@ from dataclasses import dataclass, field
 
 @dataclass(frozen=True)
 class PhysicalAppearance:
-    age: int = 28
-    ethnicity: str = "Mixed pan-Asian (Korean, Filipino, and Japanese heritage)"
+    age: int = 26
+    ethnicity: str = "Eurasian (half-Asian, half-white mixed race)"
     build: str = "Athletic, lean runner's physique with toned legs and visible muscle definition"
     height: str = "5'6\" (168cm)"
-    hair: str = "Long dark brown-black hair with subtle warm highlights, usually in a loose ponytail or half-up style"
-    skin: str = "Warm bronze-tan with a natural sun-kissed glow from outdoor training"
-    face: str = "Strikingly beautiful with mixed Asian features — slightly deeper-set almond eyes, full lips, soft rounded jawline, high cheekbones with a warm smile, naturally photogenic"
+    hair: str = "Wavy dark brown hair with caramel highlights, usually in a loose ponytail or half-up style"
+    skin: str = "Light golden-tan with a natural sun-kissed glow"
+    face: str = "Cute, youthful Eurasian features — large expressive round eyes, button nose, full lips, dimples when smiling, naturally photogenic"
     distinguishing: str = "Small scar on left knee from a trail fall, always wears a simple black GPS watch"
 
     def to_prompt(self) -> str:
         """Format physical appearance as an image generation prompt fragment."""
         return (
-            f"A strikingly beautiful {self.age}-year-old woman with mixed pan-Asian heritage "
-            f"(Korean, Filipino, Japanese). She has an ambiguously ethnic, model-like appearance. "
+            f"A beautiful and cute {self.age}-year-old Eurasian woman, half-Asian half-white mixed race. "
+            f"Youthful, adorable face with large expressive round eyes, button nose, full lips, "
+            f"dimples when smiling, warm radiant smile. "
+            f"Wavy dark brown hair with caramel highlights. Light golden-tan sun-kissed skin. "
             f"{self.build}. {self.height}. "
-            f"{self.hair}. {self.skin} skin. "
-            f"Beautiful face with slightly deeper-set almond eyes, full lips, soft rounded jawline, "
-            f"high cheekbones, warm radiant smile. "
             "Photorealistic, fashion photography quality, natural lighting, ultra-detailed skin texture, "
-            "beautiful woman, Instagram influencer aesthetic."
+            "beautiful cute woman, Instagram influencer aesthetic, mixed race Eurasian model."
         )
 
 
@@ -68,10 +67,10 @@ class GemmaPark:
     name: str = "Gemma Park"
     handle: str = "@gemmapark.runs"
     tagline: str = "Ultra runner. Trail lover. No shortcuts."
-    age: int = 28
+    age: int = 26
 
     # Background
-    ethnicity: str = "Mixed pan-Asian (Korean, Filipino, and Japanese heritage)"
+    ethnicity: str = "Eurasian (half-Asian, half-white mixed race)"
     location: str = "Portland, Oregon"
     hometown: str = "Seattle, Washington"
 
