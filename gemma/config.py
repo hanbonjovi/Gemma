@@ -53,7 +53,13 @@ class Config:
         if env_path:
             load_dotenv(env_path)
         else:
-            load_dotenv()
+            # Look for .env in the project root (parent of gemma/ package)
+            project_root = Path(__file__).parent.parent
+            env_file = project_root / ".env"
+            if env_file.exists():
+                load_dotenv(env_file)
+            else:
+                load_dotenv()  # Fall back to default search
 
         replicate_token = os.getenv("REPLICATE_API_TOKEN", "")
 
